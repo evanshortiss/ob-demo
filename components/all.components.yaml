@@ -13,6 +13,9 @@ spec:
   lifecycle: production
   owner: security-team
   system: open-banking-api-hub
+  dependsOn:
+    - component:default/consent-management-api
+    - component:default/beneficiary-management-api
   providesApis:
     - default/account-access-api
   consumesApis:
@@ -29,6 +32,8 @@ spec:
   lifecycle: production
   owner: payments-team
   system: sepa-ach-payment-gateway
+  dependsOn:
+    - component:default/consent-management-api
   providesApis:
     - default/payment-initiation-api
   consumesApis:
@@ -70,6 +75,8 @@ spec:
   lifecycle: production
   owner: payments-team
   system: customer-account-management
+  dependsOn:
+    - component:default/consent-management-api
   providesApis:
     - default/beneficiary-management-api
   consumesApis:
