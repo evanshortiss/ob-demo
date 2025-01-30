@@ -10,6 +10,7 @@ spec:
     displayName:
     email: open-banking-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Leo
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -23,6 +24,7 @@ spec:
     email: event-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Sadie
   parent: open-banking-team
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -36,6 +38,7 @@ spec:
     email: payments-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Robert
   parent: open-banking-team
+  children: []
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Group
@@ -49,3 +52,4 @@ spec:
     email: security-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Andrea
   parent: open-banking-team
+  children: []
