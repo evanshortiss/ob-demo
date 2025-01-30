@@ -3,11 +3,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: open-banking-team
-  description: Open Banking Team
+  description: Top-level team in Open Banking Group/Org
 spec:
   type: team
   profile:
-    displayName:
+    displayName: Open Banking Team
     email: open-banking-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Leo
   children: []
@@ -20,7 +20,7 @@ metadata:
 spec:
   type: team
   profile:
-    displayName:
+    displayName: Event Team
     email: event-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Sadie
   parent: open-banking-team
@@ -30,11 +30,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: payments-team
-  description: Owns event systems and webhooks
+  description: Owns payment systems
 spec:
   type: team
   profile:
-    displayName:
+    displayName: Payments Team
     email: payments-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Robert
   parent: open-banking-team
@@ -44,11 +44,11 @@ apiVersion: backstage.io/v1alpha1
 kind: Group
 metadata:
   name: security-team
-  description: Owns event systems and webhooks
+  description: Responsible for all things SecOps
 spec:
   type: team
   profile:
-    displayName:
+    displayName: Security Team
     email: security-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Andrea
   parent: open-banking-team
