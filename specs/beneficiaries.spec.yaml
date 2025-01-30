@@ -5,9 +5,9 @@ info:
   version: 1.0.0
 
 servers:
-  - url: https://api.openbanking.example.com/v1
+  - url: https://api.acme.example.com/v1
     description: Production Server
-  - url: https://sandbox.openbanking.example.com/v1
+  - url: https://sandbox.acme.example.com/v1
     description: Sandbox Server
 
 paths:
@@ -79,8 +79,8 @@ components:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: https://auth.openbanking.example.com/oauth2/authorize
-          tokenUrl: https://auth.openbanking.example.com/oauth2/token
+          authorizationUrl: https://auth.acme.example.com/oauth2/authorize
+          tokenUrl: https://auth.acme.example.com/oauth2/token
           scopes:
             beneficiaries:read: Read list of beneficiaries
             beneficiaries:manage: Manage beneficiaries

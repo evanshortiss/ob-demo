@@ -119,8 +119,8 @@ components:
       type: oauth2
       flows:
         authorizationCode:
-          authorizationUrl: https://auth.openbanking.example.com/oauth2/authorize
-          tokenUrl: https://auth.openbanking.example.com/oauth2/token
+          authorizationUrl: https://auth.acme.example.com/oauth2/authorize
+          tokenUrl: https://auth.acme.example.com/oauth2/token
           scopes:
             consent:create: Create user consent
             accounts:read: Read user accounts
