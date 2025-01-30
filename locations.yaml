@@ -4,7 +4,7 @@ metadata:
   name: open-banking-entities
 spec:
   targets: 
-    - ./location.groups.yaml
-    - ./location.users.yaml
-    - ./location.components.yaml
-    - ./location.apis.yaml
+    - ./locations.groups.yaml
+    - ./locations.users.yaml
+    - ./locations.components.yaml
+    - ./locations.apis.yaml
