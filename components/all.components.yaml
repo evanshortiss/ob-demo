@@ -1,0 +1,64 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: account-access-api
+  description: API that provides authorized third-party providers access to customer account information.
+spec:
+  type: service
+  lifecycle: production
+  owner: open-banking-apis
+  system: open-banking-api-hub
+  providesApis:
+    - default/account-access-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: payment-initiation-api
+  description: API for initiating payments from customer accounts, supporting SEPA credit transfers.
+spec:
+  type: service
+  lifecycle: production
+  owner: payments-transfers
+  system: sepa-ach-payment-gateway
+  providesApis:
+    - default/payment-initiation-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: consent-management-api
+  description: API for managing user consents under open banking regulations.
+spec:
+  type: service
+  lifecycle: production
+  owner: open-banking-apis
+  system: consent-management-service
+  providesApis:
+    - default/consent-management-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: webhook-notifications-api
+  description: API for managing webhook subscriptions for event notifications.
+spec:
+  type: service
+  lifecycle: production
+  owner: payments-transfers
+  system: instant-payments-engine
+  providesApis:
+    - default/webhook-notifications-api
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: beneficiary-management-api
+  description: API for managing trusted payees and beneficiaries.
+spec:
+  type: service
+  lifecycle: production
+  owner: retail-banking
+  system: customer-account-management
+  providesApis:
+    - default/beneficiary-management-api

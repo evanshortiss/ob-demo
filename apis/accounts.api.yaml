@@ -2,11 +2,12 @@ apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: account-access-api
-  description: API to retrieve account details for authorized third-party providers (TPPs)
+  description: FDX Compliant API to retrieve account details for authorized third-party providers (TPPs)
   tags:
     - ais
     - accounts
     - banking
+    - fdx
 spec:
   type: openapi
   lifecycle: production
