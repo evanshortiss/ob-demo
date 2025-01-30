@@ -3,6 +3,11 @@ kind: Component
 metadata:
   name: account-access-api
   description: API that provides authorized third-party providers access to customer account information.
+  tags:
+    - ais
+    - accounts
+    - banking
+    - fdx
 spec:
   type: service
   lifecycle: production
@@ -10,6 +15,9 @@ spec:
   system: open-banking-api-hub
   providesApis:
     - default/account-access-api
+  consumesApis:
+    - default/consent-management-api
+    - default/beneficiary-management-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -23,6 +31,8 @@ spec:
   system: sepa-ach-payment-gateway
   providesApis:
     - default/payment-initiation-api
+  consumesApis:
+    - default/consent-management-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
@@ -58,7 +68,9 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: retail-banking
+  owner: payments-team
   system: customer-account-management
   providesApis:
     - default/beneficiary-management-api
+  consumesApis:
+    - default/consent-management-api
