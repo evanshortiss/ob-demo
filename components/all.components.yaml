@@ -6,7 +6,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: open-banking-apis
+  owner: security-team
   system: open-banking-api-hub
   providesApis:
     - default/account-access-api
@@ -19,7 +19,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: payments-transfers
+  owner: payments-team
   system: sepa-ach-payment-gateway
   providesApis:
     - default/payment-initiation-api
@@ -32,7 +32,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: open-banking-apis
+  owner: security-team
   system: consent-management-service
   providesApis:
     - default/consent-management-api
@@ -45,7 +45,7 @@ metadata:
 spec:
   type: service
   lifecycle: production
-  owner: payments-transfers
+  owner: event-team
   system: instant-payments-engine
   providesApis:
     - default/webhook-notifications-api
