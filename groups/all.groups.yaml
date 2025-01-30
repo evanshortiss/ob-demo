@@ -1,0 +1,51 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: open-banking-team
+  description: Open Banking Team
+spec:
+  type: team
+  profile:
+    displayName:
+    email: open-banking-team@acme.com
+    picture: https://api.dicebear.com/9.x/bottts/svg?seed=Leo
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: event-team
+  description: Owns event systems and webhooks
+spec:
+  type: team
+  profile:
+    displayName:
+    email: event-team@acme.com
+    picture: https://api.dicebear.com/9.x/bottts/svg?seed=Sadie
+  parent: open-banking-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: payments-team
+  description: Owns event systems and webhooks
+spec:
+  type: team
+  profile:
+    displayName:
+    email: payments-team@acme.com
+    picture: https://api.dicebear.com/9.x/bottts/svg?seed=Robert
+  parent: open-banking-team
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: security-team
+  description: Owns event systems and webhooks
+spec:
+  type: team
+  profile:
+    displayName:
+    email: security-team@acme.com
+    picture: https://api.dicebear.com/9.x/bottts/svg?seed=Andrea
+  parent: open-banking-team
