@@ -13,4 +13,4 @@ spec:
   lifecycle: production
   owner: open-banking-team
   definition:
-    $text: https://github.com/evanshortiss/ob-demo/blob/main/specs/accounts.spec.yaml
+    $text: https://github.com/rhdh-demo-gh/ob-demo/blob/main/specs/accounts.spec.yaml

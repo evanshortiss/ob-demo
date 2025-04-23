@@ -11,4 +11,4 @@ spec:
   lifecycle: production
   owner: event-team
   definition:
-    $text: https://github.com/evanshortiss/ob-demo/blob/main/specs/webhooks.spec.yaml
+    $text: https://github.com/rhdh-demo-gh/ob-demo/blob/main/specs/webhooks.spec.yaml

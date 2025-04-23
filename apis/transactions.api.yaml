@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: accounts-team
   definition:
-    $text: specs/transactions.spec.yaml 
+    $text: https://github.com/rhdh-demo-gh/ob-demo/blob/main/specs/transactions.spec.yaml 

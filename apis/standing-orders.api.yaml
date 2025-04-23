@@ -8,4 +8,4 @@ spec:
   lifecycle: production
   owner: payments-team
   definition:
-    $text: specs/standing-orders.spec.yaml 
+    $text: https://github.com/rhdh-demo-gh/ob-demo/blob/main/specs/standing-orders.spec.yaml 

@@ -11,4 +11,4 @@ spec:
   lifecycle: production
   owner: security-team
   definition:
-    $text: https://github.com/evanshortiss/ob-demo/blob/main/specs/consents.spec.yaml
+    $text: https://github.com/rhdh-demo-gh/ob-demo/blob/main/specs/consents.spec.yaml
