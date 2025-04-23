@@ -79,7 +79,7 @@ spec:
     displayName: Compliance Team
     email: compliance-team@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Sam
-  parent: open-banking-team
+  parent: security-team
   children: []
 ---
 apiVersion: backstage.io/v1alpha1
@@ -93,5 +93,5 @@ spec:
     displayName: Customer Experience Team
     email: customer-experience@acme.com
     picture: https://api.dicebear.com/9.x/bottts/svg?seed=Zoe
-  parent: open-banking-team
+  parent: accounts-team
   children: []
