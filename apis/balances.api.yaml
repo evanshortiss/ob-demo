@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: balance-check-api
+  description: API for real-time account balance inquiries and balance history
+spec:
+  type: openapi
+  lifecycle: production
+  owner: accounts-team
+  definition:
+    $text: specs/balances.spec.yaml 
