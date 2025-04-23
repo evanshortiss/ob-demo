@@ -101,7 +101,7 @@ spec:
     - component:default/consent-management-api
     - component:default/beneficiary-management-api
   providesApis:
-    - default/account-access-api
+    - default/transaction-history-api
   consumesApis:
     - default/consent-management-api
     - default/beneficiary-management-api
