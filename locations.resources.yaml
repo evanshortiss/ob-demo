@@ -4,4 +4,4 @@ metadata:
   name: open-banking-apis
 spec:
   type: url
-  target: ./apis/**/*.yaml
+  target: ./resources/**/*.yaml
