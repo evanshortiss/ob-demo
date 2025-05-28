@@ -34,6 +34,8 @@ spec:
   system: sepa-ach-payment-gateway
   dependsOn:
     - component:default/consent-management-api
+    - resource:default/payment-events-topic
+    - resource:default/audit-logs-bucket
   providesApis:
     - default/payment-initiation-api
   consumesApis:
@@ -49,6 +51,9 @@ spec:
   lifecycle: production
   owner: security-team
   system: consent-management-service
+  dependsOn:
+    - resource:default/consent-store
+    - resource:default/audit-logs-bucket
   providesApis:
     - default/consent-management-api
 ---
@@ -100,6 +105,8 @@ spec:
   dependsOn:
     - component:default/consent-management-api
     - component:default/beneficiary-management-api
+    - resource:default/transaction-store
+    - resource:default/audit-logs-bucket
   providesApis:
     - default/transaction-history-api
   consumesApis:
