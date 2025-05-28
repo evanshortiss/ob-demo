@@ -5,6 +5,7 @@ metadata:
 spec:
   targets: 
     - ./locations.domains-systems.yaml
+    - ./locations.resources.yaml
     - ./locations.groups.yaml
     - ./locations.users.yaml
     - ./locations.components.yaml
